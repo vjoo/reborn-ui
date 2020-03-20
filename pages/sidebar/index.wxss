@@ -1,0 +1,62 @@
+/* pages/sidebar/index.wxss */
+ .supersorting {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+}
+.leftsorting, .rightsorting {
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+} 
+.leftsorting {
+    width: 85px;
+    text-align: center;
+    flex: 0 0 auto;
+    background-color: #f6f6f6;
+}
+.rightsorting {
+    flex: 1 1 auto;
+    background-color: #fff;
+}
+.iconlist {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 14px 10px;
+    background-color: transparent;
+    text-align: center;
+}
+.iconlist .list {
+     
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+}
+.iconlist .list .text {
+    font-size: 14px;
+    margin: 6px 0px 2px 0px;
+    color: #3d4145;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    clear: both;
+}
+.iconlist .list .imgk {
+    width: 100%;
+}

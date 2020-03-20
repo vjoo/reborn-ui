@@ -1,0 +1,62 @@
+<!--pages/sidebar/index.wxml-->
+
+<view class="supersorting"> 
+<view class="leftsorting">
+<van-sidebar active-key="{{ activeKey }}" bind:change="onChange" >
+  <van-sidebar-item title="运动旅游" />
+  <van-sidebar-item title="居家生活" />
+  <van-sidebar-item title="母婴亲子" />
+    <van-sidebar-item title="数码家具" />
+  <van-sidebar-item title="服饰鞋帽" />
+  <van-sidebar-item title="特色精品" />
+  <van-sidebar-item title="母婴亲子" />
+    <van-sidebar-item title="数码家具" />
+  <van-sidebar-item title="服饰鞋帽" />
+  <van-sidebar-item title="特色精品" />
+    
+</van-sidebar>
+</view>
+<view class="rightsorting">
+<view id="onepage">
+<view class="iconlist"> 
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/5c088559ebcc3f0ffcda663f04dfbeb2.png" class="imgk" mode="widthFix" />
+    <text class="text">运动旅游</text>
+    </view> 
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/fede8b110c502ec5799702d5ec824792.png" class="imgk" mode="widthFix" />
+    <text class="text">居家生活</text>
+    </view>
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/896a3beac514ae8f40aafe028e5fec56.png" class="imgk" mode="widthFix" />
+    <text class="text">服饰鞋帽</text>
+    </view>
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/f7281169d4e82d5d8d52aa1fec83fe01.png" class="imgk" mode="widthFix" />
+    <text class="text">特色精品</text>
+    </view> 
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/559d2a240ec20b096590a902217009ff.png" class="imgk" mode="widthFix" />
+    <text class="text">母婴亲子</text>
+    </view>
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/fbca8e1f2948f0c09fc7672c2c125384.png" class="imgk" mode="widthFix" />
+    <text class="text">数码家具</text>
+    </view>
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/37520d1204a0c55474021b43dac2a69e.png" class="imgk" mode="widthFix" />
+    <text class="text">美食佳酒</text>
+    </view> 
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/c6fd8835a6400b7da7a016ad85506b69.png" class="imgk" mode="widthFix" />
+    <text class="text">个人清洁</text>
+    </view>
+    <view class="list">
+     <image src="https://yanxuan.nosdn.127.net/6c3bd9d885c818b1f73e497335a68b47.png" class="imgk" mode="widthFix" />
+    <text class="text">服饰鞋帽</text>
+    </view>
+	 </view>
+
+</view>
+</view>
+</view>

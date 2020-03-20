@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-dropdown-menu": "@vant/weapp/dist/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dist/dropdown-item/index",
+    "van-sticky": "@vant/weapp/dist/sticky/index",
+    "van-button": "@vant/weapp/dist/button/index"
+  }
+}

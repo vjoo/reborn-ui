@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-sidebar": "@vant/weapp/dist/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/dist/sidebar-item/index"
+  }
+}

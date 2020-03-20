@@ -1,0 +1,263 @@
+<!--index.wxml-->
+
+ 
+
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{bg}}" style='height:{{Height}};'>
+   <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix" bindload='imgHeight'/>
+    </swiper-item>
+   </block>
+</swiper>
+
+
+
+<van-tabbar active="{{ active }}"
+  active-color="#ee0a24"
+  inactive-color="#000"
+  bind:change="onChange">
+  <van-tabbar-item name="home" icon="shop-o">首页</van-tabbar-item>
+  <van-tabbar-item name="2" icon="apps-o">分类</van-tabbar-item>
+  <van-tabbar-item name="3" icon="shopping-cart-o" info="20">购物车</van-tabbar-item>
+  <van-tabbar-item name="4" icon="user-o" dot>我的</van-tabbar-item>
+</van-tabbar>
+
+<!--
+<van-grid border="{{ false }}">
+  <van-grid-item icon="bars" text="分类" />
+  <van-grid-item icon="hot" text="新品" />
+  <van-grid-item icon="vip-card" text="专区" />
+  <van-grid-item icon="shop-collect" text="活动" />
+</van-grid>
+-->
+
+<view class="weui-row pjpj">
+    <view class="similar-product bgfff wd100">
+     <view class="hxbj">
+      <view class="p5 list hxbj-parent">
+        <view class="qieimg hxbj-stable"><image src="https://yanxuan-item.nosdn.127.net/53e537176b00c63b3fd3ebdb4dc80c80.png" mode="widthFix">
+        </image></view>
+        <view class="hxbj-change">
+          <view class="similar-product-text">满199减120三只松鼠 开心果100g坚果炒货零食每日坚果 1袋装 </view>
+          <view class="jpicon"> <span class="fl">￥599.00</span>
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+  <view class="clear"></view>
+        </view>
+        </view>
+      </view>
+      
+      </view>  
+      <view class="hxbj">
+      <view class="p5 list hxbj-parent">
+        <view class="qieimg hxbj-stable"><image src="https://yanxuan-item.nosdn.127.net/57822fca9e3dd4f310aa9bb5cd8c2a11.png" mode="widthFix">
+        </image></view>
+        <view class="hxbj-change">
+          <view class="similar-product-text">满199减120三只松鼠 开心果100g坚果炒货零食每日坚果 1袋装 </view>
+          <view class="jpicon"> <span class="fl">￥599.00</span>
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+  <view class="clear"></view>
+        </view>
+        </view>
+      </view>
+      
+      </view> 
+      <view class="hxbj">
+      <view class="p5 list hxbj-parent">
+        <view class="qieimg hxbj-stable"><image src="https://yanxuan-item.nosdn.127.net/e6681b4863072388c60912cd244655e2.png" mode="widthFix">
+        </image></view>
+        <view class="hxbj-change">
+          <view class="similar-product-text">满199减120三只松鼠 开心果100g坚果炒货零食每日坚果 1袋装 </view>
+          <view class="jpicon"> <span class="fl">￥599.00</span>
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+  <view class="clear"></view>
+        </view>
+        </view>
+      </view>
+      
+      </view> 
+      </view>
+
+      
+  </view>
+
+
+
+<view class="weui-row pjpj nm">
+<view class="similar-product bgfff"> 
+      <view class="p5">
+       
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/53e537176b00c63b3fd3ebdb4dc80c80.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        一呼一吸驱散疲惫 日本百年香堂线香 沉香
+        </view>
+        <view class="jpicon"> <span class="fl">￥199.00</span>
+        
+             <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+             <view class="clear"></view>
+        </view>
+      </view>
+      </view> 
+      
+      </view>
+
+      <view class="weui-row pjpj">
+<view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/57822fca9e3dd4f310aa9bb5cd8c2a11.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        印度制造 纯棉线编织抱枕套  
+        </view>
+        <view class="jpicon"> <span class="fl">￥159.00</span>
+          <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+          <view class="clear"></view>
+        </view>
+      </view>
+      </view> 
+      <view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/e6681b4863072388c60912cd244655e2.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        印度制造 纯棉线编织抱枕套  
+        </view>
+        <view class="jpicon"> <span class="fl">￥159.00</span>
+          <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+          <view class="clear"></view>
+        </view>
+      </view>
+      </view>
+      <view class="clear"></view>
+      </view>
+
+ <view class="linebgk"></view>
+
+<view class="title-sy-two">
+    <p class="lline"></p>
+    <p class="ti-color">综合商品</p>
+    <p class="rline"></p>
+  </view>
+
+
+
+<view class="weui-row pjpj">
+    <view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+     
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/f5fc52b06a650fe1ce9e5c74a16feedd.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        2小时杀菌99% 除菌除醛净化剂
+        </view>
+        <view class="jpicon"> <span class="fl">￥199.00</span>
+          <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+          <view class="clear"></view>
+        </view>
+      </view>
+      </view>
+    
+
+
+
+<view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+       
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/c774fa0979a17ba5620d21b7ee7196c3.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        喝出白嫩水光肌 韩国胶原蛋白精华饮
+        </view>
+        <view class="jpicon"> <span class="fl">￥99.00</span>
+         
+           <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" />  
+            <view class="clear"></view>
+        </view>
+      </view>
+      </view>
+
+      <view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/53e537176b00c63b3fd3ebdb4dc80c80.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        4重过滤 99.99%除菌除氯日本净水龙头 
+        </view>
+        <view class="jpicon"> <span class="fl">￥299.00</span>
+         
+            <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+            <view class="clear"></view>
+        </view>
+      </view>
+      </view>
+
+      <view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/fee8578f696b94d044950196669a8c39.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        在家也能吃火锅 日本设计电磁炉陶瓷不粘锅 
+        </view>
+        <view class="jpicon"> <span class="fl">￥599.00</span>
+         
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+    <view class="clear"></view>           
+        </view>
+      </view>
+      </view>
+
+<view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/e6681b4863072388c60912cd244655e2.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        睡着按摩肩颈 泰国93%含量天然乳胶枕
+        </view>
+        <view class="jpicon"> <span class="fl">￥599.00</span>
+         
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+    <view class="clear"></view>           
+        </view>
+      </view>
+      </view>
+
+      <view class="weui-col-50 similar-product bgfff"> 
+      <view class="p5">
+      
+        <view class="qieimg boximgsizing">
+        <image mode="widthFix" src="https://yanxuan-item.nosdn.127.net/57822fca9e3dd4f310aa9bb5cd8c2a11.png" class="image-center" ></image>
+        </view>
+        <view class="similar-product-text"> 
+        旅途睡个安稳觉 泰国天然乳胶连帽U形枕
+        </view>
+        <view class="jpicon"> <span class="fl">￥599.00</span>
+         
+  <van-button icon="shopping-cart" type="primary" class="hr-cart " round  size="mini" color="#E00003" /> 
+    <view class="clear"></view>           
+        </view>
+      </view>
+      </view>
+
+
+
+
+      <view class="clear"></view>
+  </view>
+
+      <view style="height:50px"></view>
+
+      

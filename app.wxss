@@ -1,0 +1,8 @@
+/**app.wxss**/
+@import 'weui.wxss';
+@import "miniprogram_npm/@vant/weapp/dist/common/index.wxss";
+view{font-family: PingFangSC-Light,helvetica,'Heiti SC';}
+.clear{clear: both}
+view{box-sizing: border-box;}
+.slide-image{width: 100%;display: block}
+.swiper-item{overflow-x: hidden}
