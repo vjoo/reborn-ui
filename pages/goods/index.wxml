@@ -1,0 +1,90 @@
+<!--pages/goods/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{bg}}" style='height:{{Height}};'>
+   <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix" bindload='imgHeight'/>
+    </swiper-item>
+   </block>
+</swiper>
+
+
+
+<view class="congb">
+
+<view class="buy_area">
+<view class="fn_wrap">
+<text class="fn">印度制造 纯棉线编织抱枕套 林家铺子果锦糖水黄桃罐头425g*12罐/一箱糖水黄桃罐头糖水黄桃罐头糖水黄桃罐头糖水黄桃罐头糖水黄桃罐头</text></view>
+<view class="price_wrap">
+
+<view class="price">￥<text class="userPrice">69</text><text class="ups"> / 元</text>
+</view>
+<view class="yxl">销量.<text>322件</text></view>
+<view class="yxl"><text>江苏</text>.发货
+</view>
+</view>
+ <view style="height:10px"></view>
+<view class="fn_wrap ggs">
+<text class="colorgg">尺寸:</text>
+<view class="gglist clear">
+<text class="gir">S</text>
+<text class="gir on">M</text>
+<text class="gir">L</text>
+<text class="gir">XX</text>
+<text class="gir">XXX</text>
+<text class="gir">XXXL</text>
+ 
+</view></view>
+<view class="fn_wrap ggs">
+<text class="colorgg">颜色:</text>
+<view class="gglist clear">
+<text class="gir">红色</text>
+<text class="gir">蓝色</text>
+<text class="gir">黑色</text>
+</view></view>
+
+</view>
+
+
+
+
+
+        <view class="weui-cells weui-cells_after-title">
+
+
+
+ 
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">保障</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">假一赔.破损包退.上门服务.极速退款</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">参与信息</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">生产日期.品牌...</view>
+            </navigator>
+            
+        </view>
+
+
+
+
+
+<view class="gdview">
+    <image src="https://yanxuan-item.nosdn.127.net/4c27c642aee015e3de78c7763791c93b.png" class="slide-image" mode="widthFix"/>
+    <image src="https://yanxuan-item.nosdn.127.net/4c27c642aee015e3de78c7763791c93b.png" class="slide-image" mode="widthFix"/>
+
+
+
+</view>
+
+
+
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" dot />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  <van-goods-action-icon icon="shop-o" text="店铺" bindtap="onTapView" data-url="../index/index"/>
+  <van-goods-action-button text="加入购物车" type="warning" class="dgh" />
+  <van-goods-action-button text="立即购买" class="dgh"/>
+</van-goods-action>
+
+
+</view>

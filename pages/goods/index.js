@@ -1,15 +1,11 @@
-//index.js
-//获取应用实例
-
+// pages/goods/index.js
 Page({
-
   data: {
-    active: 'ta1',
     imgUrls: [
-      'https://yanxuan.nosdn.127.net/0cd24646257bb45524321f307f123b26.jpg',
-      'https://yanxuan.nosdn.127.net/2b426e10cc9f3f8b8b2798f6a6499007.jpg',
-      'https://yanxuan.nosdn.127.net/6dd409e73b4062464dc07b2aa06d6d53.jpg',
-      'https://yanxuan.nosdn.127.net/4ed70e02bf7762469cb18745f3ff5815.jpg'
+      'https://yanxuan-item.nosdn.127.net/904a10b076f6734fc10af4644f92d04d.png',
+      'https://yanxuan-item.nosdn.127.net/977772e5b5d4e03c8b45df7933081914.png',
+      'https://yanxuan-item.nosdn.127.net/4c27c642aee015e3de78c7763791c93b.png',
+      
     ],
     indicatorDots: true,
     circular: true,
@@ -18,14 +14,8 @@ Page({
     duration: 300,
     Height: "",
   },
-  onChange(event) {
-    this.setData({
-      active: event.detail
-    });
-  },
-
   //设置图片轮显高度
-  imgHeight: function(e) {
+  imgHeight: function (e) {
     var winWid = wx.getSystemInfoSync().windowWidth; //获取当前屏幕的宽度
     var imgh = e.detail.height; //图片高度
     var imgw = e.detail.width; //图片宽度
@@ -36,17 +26,18 @@ Page({
       Height: swiperH //设置高度
     })
   },
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
-  onShow: function() {
+  onShow: function () {
 
   },
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   },
-  /**
+  
+   /**
    * 点击跳转视图事件
    */
   onTapView: function (event){
@@ -55,5 +46,5 @@ Page({
       url: event.currentTarget.dataset.url,
     })
   }
-
+   
 });

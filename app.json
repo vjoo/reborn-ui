@@ -1,17 +1,17 @@
 {
   "pages": [
-    
-    "pages/index/index",
+    "pages/goods/index",
+    "pages/sidebar/index",
     "pages/splist/index",
-    "pages/sidebar/index"
-
+    "pages/index/index"
+   
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarBackgroundColor": "#f1f1f1",
     "navigationBarTitleText": "小程序商城",
     "navigationBarTextStyle": "black"
   },
-
   "sitemapLocation": "sitemap.json"
 }

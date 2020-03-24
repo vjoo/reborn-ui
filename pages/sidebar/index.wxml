@@ -13,7 +13,9 @@
     <van-sidebar-item title="数码家具" />
   <van-sidebar-item title="服饰鞋帽" />
   <van-sidebar-item title="特色精品" />
-    
+  <van-sidebar-item title="数码家具" />
+  <van-sidebar-item title="服饰鞋帽" />
+  <van-sidebar-item title="end" />
 </van-sidebar>
 </view>
 <view class="rightsorting">
